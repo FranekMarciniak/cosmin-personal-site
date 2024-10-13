@@ -13,7 +13,7 @@ interface ScramblerState {
 
 function createScrambler() {
   const state: ScramblerState = {
-    maxRandomizationSteps: 14,
+    maxRandomizationSteps: 12,
     originalText: '',
     scrambledText: '',
     encodeCounters: [],

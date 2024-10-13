@@ -21,12 +21,14 @@
 body {
   padding: 15px;
 }
+
 h1 {
   font-size: var(--font-size-5xl);
   font-weight: 400;
+  line-height: var(--font-size-5xl);
 }
 
-.clean-list {
+.nav-list {
   list-style: none;
   padding: 0;
   display: flex;
@@ -38,6 +40,7 @@ h1 {
       font-weight: 400;
       color: #000;
       text-decoration: none;
+      line-height: var(--font-size-5xl);
       span:first-child {
         &:hover {
           color: #8a8a8a;
