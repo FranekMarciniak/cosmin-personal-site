@@ -7,9 +7,23 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 2.75rem;
 }
+
 body {
   padding: 15px;
+}
+h1 {
+  font-size: var(--font-size-5xl);
+  font-weight: 400;
 }
 
 .clean-list {
@@ -20,18 +34,16 @@ body {
 
   li {
     a {
-      font-size: 3rem;
+      font-size: var(--font-size-5xl);
       font-weight: 400;
       color: #000;
       text-decoration: none;
+      span:first-child {
+        &:hover {
+          color: #8a8a8a;
+        }
+      }
     }
   }
 }
 
-.red {
-  color: red !important;
-}
-
-.green {
-  color: green !important;
-}
